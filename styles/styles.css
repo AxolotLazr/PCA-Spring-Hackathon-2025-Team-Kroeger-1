@@ -1,0 +1,71 @@
+:root {
+    --backgroundColor1: rgb(64,64,64);
+    --backgroundColor2: rgb(56,56,56);
+
+    --buttonColor: rgb(0,160,224);
+    --buttonHighlight: rgb(64,192,255);
+    --buttonShadow: rgb(16,64,128);
+}
+
+body {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    background-color: var(--backgroundColor1);
+}
+
+button {
+    width: 128px;
+    height: 32px;
+    background-color: var(--buttonColor);
+
+    padding: 2px 0px 2px 0px;
+
+    border: solid;
+    border-width: 1px;
+    border-radius: 4px;
+    border-color: var(--buttonHighlight) var(--buttonShadow) var(--buttonShadow) var(--buttonHighlight);
+
+    &:active {
+        padding: 4px 0px 0px 0px;
+
+        border-color: var(--buttonShadow) var(--buttonHighlight) var(--buttonHighlight) var(--buttonShadow);
+    }
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+}
+
+#welcomePage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+}
+
+#mapPage {
+
+    >#reselectGrade {
+        position: fixed;
+        right: 0px;
+        top: 0px;
+    }
+}
